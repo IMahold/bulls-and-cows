@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Bulls and Cows</h1>
+            <h3>Rules</h3>
+            <p>One of the players comes up with a secret number, and the other player tries to guess it.The secret number must consist of 4 digits and each digit must be unique.</p> <br>
+            <p>For example: 
+              <ul>
+                  <li><strong>1112</strong> would not be an acceptable secret number,</li>
+                  <li><strong>1234</strong>  on the other hand is an acceptable value for the secret number, since each digit is unique</li>
+              </ul>  
+            </p> <br>
+            <p>After each guess, the player will get a hint to help them guess better next time around.</p><br>
+            <p>The hint tells the player how many bulls and how many cows there were. What are bulls and cows?</p>
+            <ul>
+                <li>If there are any matching digits and they are in their right positions, they are counted as <em>"bulls"</em>.</li>
+                <li>If in different positions, they are counted as <em>"cows"</em>.</li>
+            </ul> <br>
+            <p>For example, with a secret number <strong>4271</strong>:</p>
+            <p>Player's try: 1234</p>
+            <p>Hint: 1 bull and 2 cows</p>
+            <button id="play-button">Play</button>
+    
+           
+            <div style="display: none;" id="game-interface">
+                <form action="" id="id-form">
+                    <input type="text" name="" id="type-text"> 
+                    <label for="">Guess number</label><br>
+        
+                    <input type="submit" value="Submit" id="submit-text">
+                </form>
+        
+        
+                <div>
+                    <p id="paragraph">The result is: </p>
+                </div>
+            </div>
+    
+        </div>
+
+
+
+
+    </div>
+   
+
+
+    
+</body>
+</html>
